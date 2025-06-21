@@ -16,8 +16,8 @@ app.post("/api/chat", async (req, res) => {
     const openaiRes = await fetch("https://api.openai.com/v1/chat/completions", {
       method: "POST",
       headers: {
-        Authorization: Bearer ${process.env.OPENAI_API_KEY},
-        "Content-Type": "application/json"
+      Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+      "Content-Type": "application/json"
       },
       body: JSON.stringify({
         model: "gpt-4o",
@@ -35,7 +35,7 @@ app.post("/api/chat", async (req, res) => {
       await fetch("https://api.hubapi.com/crm/v3/objects/contacts", {
         method: "POST",
         headers: {
-          Authorization: Bearer ${process.env.HUBSPOT_TOKEN},
+          Authorization: `Bearer ${process.env.HUBSPOT_TOKEN}`,
           "Content-Type": "application/json"
         },
         body: JSON.stringify({
