@@ -1,14 +1,11 @@
 {
-  "name": "nodejs-app",
+  "name": "klartext-gpt-backend",
   "version": "1.0.0",
-  "description": "A minimal Node.js web application.",
-  "main": "app.js",
-  "author": "alphasec",
-  "license": "MIT",
+  "main": "server.js",
+  "type": "module",
   "dependencies": {
-    "express": "^4.19.2"
-  },
-  "scripts": {
-    "start": "node app.js"
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.2",
+    "cors": "^2.8.5"
   }
 }
