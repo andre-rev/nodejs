@@ -59,5 +59,5 @@ app.post("/api/chat", async (req, res) => {
 // ---- Bereitstellen ----
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(Klartext-GPT API läuft auf Port ${PORT});
+  console.log(`Klartext-GPT API läuft auf Port ${PORT}`);
 });
