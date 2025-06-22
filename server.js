@@ -1,11 +1,19 @@
 import express from "express";
 import fetch from "node-fetch";
 import cors from "cors";
-
+import rateLimit from "express-rate-limit"; // <-- NEU
 
 const app = express();
 app.use(cors());
 app.use(express.json());
+
+// ---- Rate-Limiter für /api/chat (max. 5 Requests pro Minute/IP) ----
+const limiter = rateLimit({
+  windowMs: 60 * 1000, // 1 Minute
+  max: 5,
+  message: { reply: "Zu viele Anfragen. Bitte warte eine Minute." }
+});
+app.use("/api/chat", limiter);
 
 // ---- POST /api/chat (Chatbot + optional Lead) ----
 app.post("/api/chat", async (req, res) => {
@@ -15,8 +23,8 @@ app.post("/api/chat", async (req, res) => {
     const openaiRes = await fetch("https://api.openai.com/v1/chat/completions", {
       method: "POST",
       headers: {
-      Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
-      "Content-Type": "application/json"
+        Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+        "Content-Type": "application/json"
       },
       body: JSON.stringify({
         model: "gpt-4o",
