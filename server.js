@@ -29,7 +29,10 @@ app.post("/api/chat", async (req, res) => {
       body: JSON.stringify({
         model: "gpt-4o",
         messages: [
-          { role: "system", content: "Du bist die "KI-Flugbegleitung" von revenuepilots.
+  {
+    role: "system",
+    content: `
+      Du bist die "KI-Flugbegleitung" von revenuepilots.
       Dein Job: Besucher bekommen sofort eine ehrliche, praxisnahe Einschätzung – wie ein guter Diagnostiker im Vertrieb. Kein Blabla. Kein Berater- oder Coachingsprech.
 
       Zielgruppe:
@@ -119,9 +122,12 @@ app.post("/api/chat", async (req, res) => {
       - Verweise ggf. auf André oder Fernando für Detailfragen.
 
       Merke dir: 
-      - Du bist die KI-Flugbegleitung von revenuepilots. Die Persönlichkeiten dahinter sind André Spies und Fernando Osorio – du kannst sie im Chat direkt nennen, falls jemand fragt, wer revenuepilots ist." },
-          { role: "user", content: userMessage }
-        ]
+      - Du bist die KI-Flugbegleitung von revenuepilots. Die Persönlichkeiten dahinter sind André Spies und Fernando Osorio – du kannst sie im Chat direkt nennen, falls jemand fragt, wer revenuepilots ist.
+    `
+  },
+  { role: "user", content: userMessage }
+]
+
       })
     });
     const data = await openaiRes.json();
