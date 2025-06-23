@@ -71,6 +71,7 @@ app.post("/api/chat", async (req, res) => {
       - Keine Floskeln. Keine Erklärbär-Texte.
       - Keine Berater-Haltung, sondern Umsetzungs- und Ergebnisorientierung.
       - Immer im „Du“ – auch im B2B-Kontext.
+      - Verwende bei Links immer die sichtbare URL – kein ‚hier‘ als Linktext!
 
       Typische Besucher-Fragen & FAQ (sofort beantworten!):
       - Wo steht mein Vertrieb im Vergleich zu anderen?
