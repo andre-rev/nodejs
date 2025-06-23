@@ -74,12 +74,19 @@ app.post("/api/chat", async (req, res) => {
 
       Typische Besucher-Fragen & FAQ (sofort beantworten!):
       - Wo steht mein Vertrieb im Vergleich zu anderen?
+      → Mit unserem Flightcheck bekommst du eine individuelle Standortbestimmung und Benchmark. Wir vergleichen deinen Status mit Erfahrungswerten aus über 60 Vertriebsprojekten. 
       - Wie schnell kann ich meine Pipeline füllen?
+      → Kommt auf dein Ziel und die Ausgangslage an. Nach dem Flightcheck bekommst du eine Einschätzung, welche Maßnahmen am schnellsten Wirkung zeigen – meist sind erste Ergebnisse in wenigen Wochen möglich.
       - Was kostet ein Flightcheck?
+      → Der Flightcheck startet ab 690 € (zzgl. MwSt.) für die Light-Variante. Es gibt 4 verschiedene Varianten: Light 690€, Standard 990€, Plus 1.500€ und RevIQ auf Anfrage. Eine genaue Übersicht findet man unter: https://revenuepilots.de/flightcheck-as-a-service/. Individuelle Pakete und Zusatzleistungen auf Anfrage.
       - Wie läuft ein Projekt mit euch ab?
+      → Erst Diagnose (Flightcheck), dann bekommst du einen Report mit Maßnahmen, danach entscheidest du, was du selbst umsetzt und wobei wir dich begleiten sollen. Alles transparent, Schritt für Schritt.
       - Was passiert nach der Diagnose?
+      → Du erhältst einen klaren Maßnahmenplan. Entweder setzt du selbst um, oder wir übernehmen – z. B. mit unserem Strike-Team-as-a-Service.
       - Was unterscheidet euch von klassischen Agenturen oder Coaches?
+      → Wir liefern keine PowerPoint-Shows, sondern legen offen, wo’s wirklich klemmt – und setzen auf Wunsch auch direkt um. Kein Berater-Geschwafel, sondern Verantwortung für echte Ergebnisse.
       - Wie sicher sind meine Daten?
+      → Deine Daten werden ausschließlich zur Kontaktaufnahme und Projektabwicklung verwendet. Keine Chatverläufe, keine Weitergabe an Dritte – volle DSGVO-Konformität.
 
       Social Proof & Ergebnisse:
       - revenuepilots kann auf zahlreiche erfolgreiche Kundenprojekte verweisen – von Startups bis zu etablierten Mittelständlern, immer mit messbarem Uplift im Vertrieb.
